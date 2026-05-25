@@ -1,0 +1,45 @@
+behaviors:
+  Flappy_Bird:
+    trainer_type: ppo  # PPO algorithm
+    model_path: "C:/Users/rkiri/My project/results/Test1/Flappy_Bird"  # Correct path to the directory
+    hyperparameters:
+      batch_size: 1024
+      buffer_size: 10240
+      learning_rate: 0.0003
+      beta: 0.005
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 3
+      learning_rate_schedule: linear
+      beta_schedule: linear
+      epsilon_schedule: linear
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 2
+      vis_encode_type: simple
+      memory: None
+      goal_conditioning_type: hyper
+      deterministic: false
+    checkpoint_interval: 500000  # Save model every 500k steps
+    max_steps: 500000  # Total training steps
+    time_horizon: 64  # Number of steps before updating the model
+    summary_freq: 50000  # How often to log training summaries
+    threaded: false
+    keep_checkpoints: 5  # Keep the last 5 checkpoints
+    even_checkpoints: false
+    self_play: None
+    behavioral_cloning: None
+
+    reward_signals:
+      extrinsic:
+        gamma: 0.99  # Discount factor for future rewards
+        strength: 1.0  # Strength of the reward signal
+        network_settings:
+          normalize: false
+          hidden_units: 128
+          num_layers: 2
+          vis_encode_type: simple
+          memory: None
+          goal_conditioning_type: hyper
+          deterministic: false

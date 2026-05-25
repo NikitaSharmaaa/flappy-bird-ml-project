@@ -1,0 +1,47 @@
+{
+    "Flappy_Bird": {
+        "checkpoints": [
+            {
+                "steps": 434715,
+                "file_path": "results\\Test1\\Flappy_Bird\\Flappy_Bird-434715.onnx",
+                "reward": 4180.900373544012,
+                "creation_time": 1744466334.8217835,
+                "auxillary_file_paths": [
+                    "results\\Test1\\Flappy_Bird\\Flappy_Bird-434715.pt"
+                ]
+            },
+            {
+                "steps": 499999,
+                "file_path": "results\\Test1\\Flappy_Bird\\Flappy_Bird-499999.onnx",
+                "reward": -0.753881550403802,
+                "creation_time": 1744473324.1862493,
+                "auxillary_file_paths": [
+                    "results\\Test1\\Flappy_Bird\\Flappy_Bird-499999.pt"
+                ]
+            },
+            {
+                "steps": 500009,
+                "file_path": "results\\Test1\\Flappy_Bird\\Flappy_Bird-500009.onnx",
+                "reward": -0.754193942656992,
+                "creation_time": 1744473324.2646823,
+                "auxillary_file_paths": [
+                    "results\\Test1\\Flappy_Bird\\Flappy_Bird-500009.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500009,
+            "file_path": "results\\Test1\\Flappy_Bird.onnx",
+            "reward": -0.754193942656992,
+            "creation_time": 1744473324.2646823,
+            "auxillary_file_paths": [
+                "results\\Test1\\Flappy_Bird\\Flappy_Bird-500009.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

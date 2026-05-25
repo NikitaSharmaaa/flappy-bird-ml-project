@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1744475412",
+        "python_version": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\rkiri\\My project\\venv\\Scripts\\mlagents-learn --run-id=Pipe_Test --force",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.6.0+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1744475436"
+    },
+    "total": 24.215142599998217,
+    "count": 1,
+    "self": 0.0029434000025503337,
+    "children": {
+        "run_training.setup": {
+            "total": 0.015873999996983912,
+            "count": 1,
+            "self": 0.015873999996983912
+        },
+        "TrainerController.start_learning": {
+            "total": 24.196325199998682,
+            "count": 1,
+            "self": 0.00039089999336283654,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 24.195923400002357,
+                    "count": 1,
+                    "self": 24.195923400002357
+                },
+                "trainer_threads": {
+                    "total": 6.00004568696022e-07,
+                    "count": 1,
+                    "self": 6.00004568696022e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 1.0299998393747956e-05,
+                    "count": 1,
+                    "self": 1.0299998393747956e-05
+                }
+            }
+        }
+    }
+}
